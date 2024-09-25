@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #2d3467;
+    background-color: #9b906d;
 }
 
 .navbar ul {
@@ -17,8 +17,9 @@
     margin-right: 10px;
 }
 
-.navbar ul li:hover {
-    background-color: #7cc6e5;
+.navbar ul li:hover { 
+    /* изменяет при направление мыши в навбаре */
+    background-color: #393001; 
     border-radius: 20%;
 }
 
@@ -40,7 +41,8 @@
 }
 
 .navbar div:hover {
-    background-color: #7cc6e5;
+    /* изменяет цвет мыши для ентри */
+    background-color: #393001;
     border-radius: 20%;
 }
 
@@ -91,7 +93,7 @@ body {
 
 .navbar ul .work ul li {
     z-index: 20; /* Ensure list items have the same stacking order as the parent */
-    background-color: #7cc6e5; /* Set background color */
+    background-color: #c3b377; /* Set background color */
     margin-bottom: 2px; /* Add space between items */
 }
 
@@ -111,6 +113,11 @@ main {
             rgba(226, 237, 233, 0.72) 37%,
             rgba(208, 238, 243, 1) 100%);
 }
+main>img {
+    /* мой код для выравнивание по центру картинку */
+    display: block;
+    margin: 0 auto; 
+}
 
 .burger {
     display: none;
@@ -125,7 +132,7 @@ p {
 }
 
 p:hover {
-    background-color: #7cc6e5;
+    background-color: #a59d75;
 }
 
 .container section {
@@ -276,7 +283,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: aqua;
+    background-color: #9b906d;
 }
 
 footer a {
@@ -341,7 +348,7 @@ footer a {
     .container img:hover {
         transform: scale(1.03);
         transition: 0.5s ease;
-        box-shadow: 5px 5px 5px #7cc6e5;
+        box-shadow: 5px 5px 5px #867b5f;
     }
 
     .interests {
