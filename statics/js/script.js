@@ -54,17 +54,25 @@ div.addEventListener("click", (event) => {
     calculus("/");
 });
 
-function calculate(operation, num) {
-    switch (operation) {
-      case "sin":
-        return Math.sin(num);
-      case "cos":
-        return Math.cos(num);
-      case "tg":
-        return (num % Math.PI) === (Math.PI / 2) ? "error" : Math.tan(num);
-      case "ctg":
-        return (num % Math.PI) === 0 ? "error" : 1 / Math.tan(num);
-      default:
-        return "Invalid operation";
-    }
+function calculateTrig(operation) {
+  const angle = parseFloat(document.getElementById('angle').value);
+  const radians = angle * (Math.PI / 180);
+  let result;
+
+  switch (operation) {
+      case 'sin':
+          result = Math.sin(radians);
+          break;
+      case 'cos':
+          result = Math.cos(radians);
+          break;
+      case 'tan':
+          result = Math.tan(radians);
+          break;
+      case 'cot':
+          result = Math.tan(radians) !== 0 ? 1 / Math.tan(radians) : 'undefined';
+          break;
   }
+
+  document.getElementById('trigResult').textContent = result.toFixed(2);
+}

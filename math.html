@@ -62,8 +62,20 @@
                 <p><span id="result1">0</span></p> 
             </fieldset>
         </form>
+        <form class="trig" id="trigCalculator">
+          <label for="angle">Enter angle </label>
+          <input type="number" id="angle" name="angle" required>
+          
+          <button type="button" onclick="calculateTrig('sin')">sin</button>
+          <button type="button" onclick="calculateTrig('cos')">cos</button>
+          <button type="button" onclick="calculateTrig('tan')">tan</button>
+          <button type="button" onclick="calculateTrig('cot')">cot</button>
+          
+          <label>Result: </label>
+          <span id="trigResult"></span>
+      </form>
+      
 
-   
 
     </main>
     <footer>
