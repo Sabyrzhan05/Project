@@ -346,6 +346,78 @@ margin: 0;
     font-size: 1.2rem;
 }
 
+.trig form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.trig form fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.trig form fieldset legend {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.trig-input {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.trig-input label {
+    margin: auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.trig-input input {
+    margin: auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.trig-input input {
+    width: 70%;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.trig-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.trig-buttons button {
+    display: block;
+    width: 20%;
+    box-sizing: border-box;
+    height: 40px;
+    margin: auto;
+}
+
+.trig-result span {
+    font-size: 1.2rem;
+    margin: auto;
+    text-align: center;
+}
+
+fieldset .butcont button:hover {
+    background-color: #b3a854; 
+}
+
+fieldset .trig-buttons button:hover {
+    background-color: #b3a854; 
+}
 footer {
     display: flex;
     flex-direction: row;

@@ -1,31 +1,5 @@
 document.getElementById("burger2").addEventListener("click", function () {
-div.addEventListener("click", (event) => {
-    event.preventDefault();
-    calculus("/");
-});
-
-function calculateTrig(operation) {
-  const angle = parseFloat(document.getElementById('angle').value);
-  const radians = angle * (Math.PI / 180);
-  let result;
-
-  switch (operation) {
-      case 'sin':
-          result = Math.sin(radians);
-          break;
-      case 'cos':
-          result = Math.cos(radians);
-          break;
-      case 'tan':
-          result = Math.tan(radians);
-          break;
-      case 'cot':
-          result = Math.tan(radians) !== 0 ? 1 / Math.tan(radians) : 'undefined';
-          break;
-  }
-
-  document.getElementById('trigResult').textContent = result.toFixed(2);
-}    document.querySelector(".navbar").classList.toggle("open")
+    document.querySelector(".navbar").classList.toggle("open")
 })
 
 const plus = document.getElementById("butplus");
@@ -75,4 +49,45 @@ mult.addEventListener("click", (event) => {
     calculus("*");
 });
 
+div.addEventListener("click", (event) => {
+    event.preventDefault();
+    calculus("/");
+});
 
+function calculateTrig(operation) {
+    const angle = parseFloat(document.getElementById('angle').value);
+    
+    if (isNaN(angle)) {
+        document.getElementById('trigResult').textContent = 'Введите корректный угол!';
+        return;
+    }
+
+    const radians = angle * (Math.PI / 180);
+    let result;
+
+    switch (operation) {
+        case 'sin':
+            result = Math.sin(radians);
+            break;
+        case 'cos':
+            result = Math.cos(radians);
+            break;
+        case 'tan':
+            result = Math.tan(radians);
+            break;
+        case 'cot':
+            result = Math.tan(radians) !== 0 ? 1 / Math.tan(radians) : 'Не определено';
+            break;
+    }
+
+    document.getElementById('trigResult').textContent = typeof result === 'number' ? result.toFixed(2) : result;
+}
+
+document.getElementById("butSin").addEventListener("click", () => calculateTrig('sin'));
+document.getElementById("butCos").addEventListener("click", () => calculateTrig('cos'));
+document.getElementById("butTan").addEventListener("click", () => calculateTrig('tan'));
+document.getElementById("butCot").addEventListener("click", () => calculateTrig('cot'));
+
+document.querySelector(".navbar-toggle").addEventListener("click", function () {
+    document.querySelector(".navbar").classList.toggle("open");
+});
