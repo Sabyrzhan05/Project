@@ -1,5 +1,31 @@
 document.getElementById("burger2").addEventListener("click", function () {
-    document.querySelector(".navbar").classList.toggle("open")
+div.addEventListener("click", (event) => {
+    event.preventDefault();
+    calculus("/");
+});
+
+function calculateTrig(operation) {
+  const angle = parseFloat(document.getElementById('angle').value);
+  const radians = angle * (Math.PI / 180);
+  let result;
+
+  switch (operation) {
+      case 'sin':
+          result = Math.sin(radians);
+          break;
+      case 'cos':
+          result = Math.cos(radians);
+          break;
+      case 'tan':
+          result = Math.tan(radians);
+          break;
+      case 'cot':
+          result = Math.tan(radians) !== 0 ? 1 / Math.tan(radians) : 'undefined';
+          break;
+  }
+
+  document.getElementById('trigResult').textContent = result.toFixed(2);
+}    document.querySelector(".navbar").classList.toggle("open")
 })
 
 const plus = document.getElementById("butplus");
@@ -49,30 +75,4 @@ mult.addEventListener("click", (event) => {
     calculus("*");
 });
 
-div.addEventListener("click", (event) => {
-    event.preventDefault();
-    calculus("/");
-});
 
-function calculateTrig(operation) {
-  const angle = parseFloat(document.getElementById('angle').value);
-  const radians = angle * (Math.PI / 180);
-  let result;
-
-  switch (operation) {
-      case 'sin':
-          result = Math.sin(radians);
-          break;
-      case 'cos':
-          result = Math.cos(radians);
-          break;
-      case 'tan':
-          result = Math.tan(radians);
-          break;
-      case 'cot':
-          result = Math.tan(radians) !== 0 ? 1 / Math.tan(radians) : 'undefined';
-          break;
-  }
-
-  document.getElementById('trigResult').textContent = result.toFixed(2);
-}
