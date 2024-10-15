@@ -418,6 +418,133 @@ fieldset .butcont button:hover {
 fieldset .trig-buttons button:hover {
     background-color: #b3a854; 
 }
+
+.API {
+    display: flex;
+    flex-direction: column;
+}
+
+.API .Petro {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .Petro img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Astana {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.API .Astana img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Tucson {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px; 
+}
+.API .Tucson img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .NY {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .NY img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .LA {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .LA img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+
+
+
+.API .Petro img {
+    border-radius: 8px;
+}
+.API .Astana img {
+    border-radius: 8px;
+}
+.API .Tucson img{
+    border-radius: 8px;
+}
+.API .NY img{
+    border-radius: 8px;
+}
+.API .LA img{
+    border-radius: 8px;
+}
+
+.API .Petro span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.API .Astana span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.API .Tucson span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.API .NY span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.API .LA span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
+
+
 footer {
     display: flex;
     flex-direction: row;
@@ -635,6 +762,40 @@ footer a {
 .math form fieldset {
     width: 70%;
 }
+
+.API .Astana {
+    width: 100%;
+}
+.API .Petro {
+    width: 100%;
+}
+.API .Tucson {
+    width: 100%;
+}
+.API .NY {
+    width: 100%;
+}
+.API .LA {
+    width: 100%;
+}
+
+.API .Astana span {
+    font-size: 1.05rem;
+}
+.API .Petro span {
+    font-size: 1.05rem;
+}
+.API .Tucson span {
+    font-size: 1.05rem;
+}
+.API .NY span {
+    font-size: 1.05rem;
+}
+.API .LA span {
+    font-size: 1.05rem;
+}
+
+
 }
 
 
