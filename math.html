@@ -1,107 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Math</title>
-    <link rel="stylesheet" href="statics/style/style.css" />
-  </head>
-  <body>
-    <nav class="navbar open">
-      <img
-        src="statics/img/порш.png"
-        width="170"
-        height="80"
-        alt="porschelogo"
-      />
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="video.html">Video</a></li>
-        <li><a href="audio.html">Music</a></li>
-        <li><a href="book.html">Book</a></li>
-        <li class="work">
-          <a href="#">Work &bigtriangledown;</a>
-          <ul>
-            <li><a href="form.html">Form</a></li>
-            <li><a href="math.html">Math</a></li>
-            <li><a href="api.html">Api</a></li>
-          </ul>
-        </li>
-      </ul>
-      <div>
-        <a href="https://www.porsche.com/international/" target="_blank"
-          >Entry</a
-        >
-      </div>
-      <div class="burger" id="burger2">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-    <main class="math">
-        <form>
-            <fieldset>
-                <legend>Calculation</legend>
-                <div class="counters">
-                    <div>
-                        <label for="first">First <br>Number</label>
-                        <input type="number" id="first" name="first" placeholder="0"> 
-                    </div>
-                    <div>
-                        <label for="second">Second<br>Number</label>
-                        <input type="number" id="second" name="second" placeholder="0">
-                    </div>
-                </div>
-                <div class="butcont">
-                    <button id="butplus">+</button>
-                    <button id="butminus">-</button>
-                    <button id="butmult">*</button>
-                    <button id="butdiv">/</button>
-                </div>
-                <p><span id="result1">0</span></p> 
-            </fieldset>
-            <form class="trig" id="trigCalculator">
-              <fieldset>
-                  <legend>Trigonometric Calculator</legend>
-                  
-                  <div class="trig-input">
-                      <label for="angle">Enter angle:</label>
-                      <input type="number" id="angle" name="angle" required>
-                  </div>
-                  
-                  <div class="trig-buttons">
-                      <button type="button" onclick="calculateTrig('sin')">sin</button>
-                      <button type="button" onclick="calculateTrig('cos')">cos</button>
-                      <button type="button" onclick="calculateTrig('tan')">tan</button>
-                      <button type="button" onclick="calculateTrig('cot')">cot</button>
-                  </div>
-                  
-                  <p><span id="trigResult">0</span></p>
-              </fieldset>
-          </form>
-          
-      
-    </main>
-    <footer>
-      <a href="https://www.youtube.com/"
-        ><img src="statics/img/you.png" width="80" height="70" alt=""
-      /></a>
-      <a href="https://www.tiktok.com/en/"
-        ><img
-          src="statics/img/gas-kvas-com-p-logotip-tik-toka-na-prozrachnom-fone-3.png"
-          width="80"
-          height="70"
-          alt=""
-      /></a>
-      <a href="https://www.instagram.com/"
-        ><img
-          src="statics/img/gas-kvas-com-p-instagramm-logotip-na-prozrachnom-fone-20.png"
-          width="80"
-          height="70"
-          alt=""
-      /></a>
-    </footer>
-    <script src="statics/js/script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math</title>
+  <link rel="stylesheet" href="statics/style/style.css" />
+</head>
+
+<body>
+  <nav class="navbar open">
+    <!-- <img src="statics/img/порш.png" width="170" height="80" alt="porschelogo" /> -->
+    <iframe src="https://lottie.host/embed/2cedd86b-33ef-4e51-b9cc-7cf4b85982e9/1GWNvSu2B4.json" width="170" height="85"></iframe>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="audio.html">Music</a></li>
+      <li><a href="book.html">Book</a></li>
+      <li class="work">
+        <a href="#">Work &bigtriangledown;</a>
+        <ul>
+          <li><a href="form.html">Form</a></li>
+          <li><a href="math.html">Math</a></li>
+          <li><a href="api.html">Api</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div>
+      <a href="https://www.porsche.com/international/" target="_blank">Entry</a>
+    </div>
+    <div class="burger" id="burger2">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <main class="math">
+    <form>
+      <fieldset>
+        <legend>Calculation</legend>
+        <div class="counters">
+          <div>
+            <label for="first">First <br>Number</label>
+            <input type="number" id="first" name="first" placeholder="0">
+          </div>
+          <div>
+            <label for="second">Second<br>Number</label>
+            <input type="number" id="second" name="second" placeholder="0">
+          </div>
+        </div>
+        <div class="butcont">
+          <button id="butplus">+</button>
+          <button id="butminus">-</button>
+          <button id="butmult">*</button>
+          <button id="butdiv">/</button>
+        </div>
+        <p><span id="result1">0</span></p>
+      </fieldset>
+      <form class="trig" id="trigCalculator">
+        <fieldset>
+          <legend>Trigonometric Calculator</legend>
+
+          <div class="trig-input">
+            <label for="angle">Enter angle:</label>
+            <input type="number" id="angle" name="angle" required>
+          </div>
+
+          <div class="trig-buttons">
+            <button type="button" onclick="calculateTrig('sin')">sin</button>
+            <button type="button" onclick="calculateTrig('cos')">cos</button>
+            <button type="button" onclick="calculateTrig('tan')">tan</button>
+            <button type="button" onclick="calculateTrig('cot')">cot</button>
+          </div>
+
+          <p><span id="trigResult">0</span></p>
+        </fieldset>
+      </form>
+
+
+  </main>
+  <footer>
+    <a href="https://www.youtube.com/"><img src="statics/img/you.png" width="80" height="70" alt="" /></a>
+    <a href="https://www.tiktok.com/en/"><img
+        src="statics/img/gas-kvas-com-p-logotip-tik-toka-na-prozrachnom-fone-3.png" width="80" height="70" alt="" /></a>
+    <a href="https://www.instagram.com/"><img
+        src="statics/img/gas-kvas-com-p-instagramm-logotip-na-prozrachnom-fone-20.png" width="80" height="70"
+        alt="" /></a>
+  </footer>
+  <script src="statics/js/script.js"></script>
+</body>
+
 </html>
